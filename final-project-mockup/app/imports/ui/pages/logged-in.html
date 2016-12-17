@@ -1,0 +1,38 @@
+<template name="Logged_In">
+
+  <img style="width: 100%; height: auto; max-height: 400px; margin-top: -14px;"
+       src="http://www.psych2go.net/wp-content/uploads/2014/08/coffee.jpeg">
+
+  <div style="text-align: center; margin-top: 20px; margin-bottom: 20px;">
+    <h1>Hi Neil.</h1>
+    <p>Let's get to work!</p>
+  </div>
+
+  <div class="ui container" style="margin-top: 30px; margin-bottom: 20px;">
+    <div class="three ui buttons">
+      <button class="ui button"><a class="{{ isActiveRoute 'New_Project_Page'}} item"
+                                   href="{{ pathFor 'New_Project_Page' }}"
+                                   style="color: black;">New Project</a></button>
+      <button class="ui button"><a class="{{ isActiveRoute 'My_Projects_Page'}} item"
+                                   href="{{ pathFor 'My_Projects_Page' }}"
+                                   style="color: black;">My Projects</a></button>
+      <button class="ui button"><a class="{{ isActiveRoute 'Collaborators_Page'}} item"
+                                   href="{{ pathFor 'Collaborators_Page' }}"
+                                   style="color: black;">Collaborators</a></button>
+    </div>
+  </div>
+
+  <div class="ui middle aligned centered grid container">
+
+    <div class="ui container" style="margin-top: 30px; margin-bottom: 20px;">
+      <div class="item">
+        <div class="ui search">
+          <input class="prompt" placeholder="Find projects" type="text">
+          <div class="results"></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</template>

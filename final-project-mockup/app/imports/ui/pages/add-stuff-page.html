@@ -1,0 +1,18 @@
+<template name="Add_Stuff_Page">
+
+  <div class="ui container">
+      <h2>ADD STUFF PAGE</h2>
+  </div>
+
+  {{#If_Logged_In}}
+    <div style="padding-top: 20px" class="ui text container">
+      {{> quickForm
+      collection=stuffCollection
+      template="semanticUI"
+      id="AddStuffForm"
+      type="insert"
+      resetOnSuccess=true}}
+    </div>
+  {{/If_Logged_In}}
+
+</template>

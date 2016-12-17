@@ -1,0 +1,63 @@
+<template name="Header">
+
+  <div style="background-color: transparent; border-radius: 0px;" class="ui borderless inverted menu">
+    <div class="ui container">
+      <a class="item" href="{{pathFor 'Home_Page'}}"><img src="/images/alloy-icon.png"></a>
+      <!--<a href="#" class="item">{{> loginButtons }} </a>-->
+
+      <div class="ui dropdown right item">
+        <div class="text">Account</div>
+        <i class="dropdown icon"></i>
+        <div class="menu">
+
+          <a class="{{ isActiveRoute 'Logged_In'}} item"
+             href="{{ pathFor 'Logged_In' }}"
+             style="color: black;">Home</a>
+
+          <a class="{{ isActiveRoute 'Profile_Page'}} item"
+             href="{{ pathFor 'Profile_Page' }}"
+             style="color: black;">Profile</a>
+
+          <a class="{{ isActiveRoute 'New_Project_Page'}} item"
+             href="{{ pathFor 'New_Project_Page' }}"
+             style="color: black;">New Project</a>
+
+          <a class="{{ isActiveRoute 'My_Projects_Page'}} item"
+             href="{{ pathFor 'My_Projects_Page' }}"
+             style="color: black;">My Projects</a>
+
+          <a class="{{ isActiveRoute 'Collaborators_Page'}} item"
+             href="{{ pathFor 'Collaborators_Page' }}"
+             style="color: black;">Collaborators</a>
+
+        </div>
+      </div>
+
+      <a href="#" class="item">About Us</a>
+
+      <!--<a class="{{ isActiveRoute 'Add_Stuff_Page'}} item" href="{{ pathFor 'Add_Stuff_Page' }}">Add Stuff</a>-->
+      <!--<a class="{{ isActiveRoute 'List_Stuff_Page'}} item" href="{{ pathFor 'List_Stuff_Page' }}">Edit Stuff</a>-->
+
+      <!--<div class="right item">-->
+      <!--<div class="ui search">-->
+      <!--<input class="prompt" placeholder="Find projects" type="text">-->
+      <!--<div class="results"></div>-->
+      <!--</div>-->
+      <!--</div>-->
+
+      <!--<a href="#" class="item">{{> loginButtons }} </a>-->
+    </div>
+  </div>
+
+  <!--<div class="ui top fixed borderless inverted menu">-->
+  <!--<div class="ui container">-->
+  <!--<a class="item" href="{{pathFor 'Home_Page'}}"><h1>meteor-application-template</h1></a>-->
+  <!--{{#if currentUser}}-->
+  <!--<a class="{{ isActiveRoute 'Add_Stuff_Page'}} item" href="{{ pathFor 'Add_Stuff_Page' }}">Add Stuff </a>-->
+  <!--<a class="{{ isActiveRoute 'List_Stuff_Page'}} item" href="{{ pathFor 'List_Stuff_Page' }}">List Stuff</a>-->
+  <!--{{/if}}-->
+  <!--<a href="#" class="item">{{> loginButtons }} </a>-->
+  <!--</div>-->
+  <!--</div>-->
+
+</template>

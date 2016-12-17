@@ -1,0 +1,70 @@
+<template name="Project_Page">
+
+  <div style="background-color: transparent; text-align: center; margin-top: -10px; padding: 10px 0;">
+    <h1>Project Name</h1>
+  </div>
+
+  <br>
+
+  <div style="text-align: center;">
+    <a class="{{ isActiveRoute 'Edit_Project_Page'}} item"
+       href="{{ pathFor 'Edit_Project_Page' }}"
+       style="color: black;">
+      <button class="ui button">Edit Project</button>
+    </a>
+  </div>
+
+  <br>
+
+  <div class="ui container" style="margin: 0 0 25px 0;">
+    <img class="ui fluid circular image"
+         src="http://sourceenterprises.com/images/photography/photography.jpg"
+         style="max-height: 250px; width: auto; margin: auto;">
+  </div>
+
+  <div style="text-align: center; margin: 0 20px;">
+    <div class="ui text container" style="margin: 15px 0;">
+      <h2>Project Description</h2>
+      <p>Information on the project.</p>
+    </div>
+
+    <div class="ui text container" style="margin: 15px 0;">
+      <h2>Collaborators</h2>
+      <p>Users working on the project.</p>
+    </div>
+
+    <div class="ui text container" style="margin: 15px 0;">
+      <h2>Tags</h2>
+      <p>#projecttags</p>
+    </div>
+  </div>
+
+  <!--{{#If_Logged_In}}-->
+  <!--<div class="ui text container">-->
+  <!--{{#if Template.subscriptionsReady}}-->
+  <!--<table style="margin-top: 20px" class="ui celled table">-->
+  <!--<thead>-->
+  <!--<tr>-->
+  <!--<th>Name</th>-->
+  <!--<th>Quantity</th>-->
+  <!--<th>Edit</th>-->
+  <!--</tr>-->
+  <!--</thead>-->
+
+  <!--<tbody>-->
+  <!--{{#each stuff in stuffList}}-->
+  <!--<tr>-->
+  <!--<td>{{stuff.name}}</td>-->
+  <!--<td>{{stuff.quantity}}</td>-->
+  <!--<td><a href="{{pathFor 'Edit_Stuff_Page' _id=stuff._id}}">Edit</a></td>-->
+  <!--</tr>-->
+  <!--{{/each}}-->
+  <!--</tbody>-->
+  <!--</table>-->
+  <!--{{else}}-->
+  <!--{{> Loading}}-->
+  <!--{{/if}}-->
+  <!--</div>-->
+  <!--{{/If_Logged_In}}-->
+
+</template>

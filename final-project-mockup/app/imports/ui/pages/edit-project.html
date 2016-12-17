@@ -1,0 +1,64 @@
+<template name="Edit_Project_Page">
+
+  <div style="background-color: transparent; text-align: center; margin-top: -10px; padding: 10px 0;">
+    <h1>Edit Project</h1>
+  </div>
+
+  <div class="ui container" style="height: 700px; margin-top: 20px;">
+    <form class="ui form">
+
+      <div style="margin-bottom: 20px;">
+        <label for="file" class="ui icon button">
+          <i class="file icon"></i>
+          Upload Image</label>
+        <input type="file" id="file" style="display:none">
+      </div>
+
+      <div class="field">
+        <label style="color: white;">Project Name</label>
+        <input type="text" name="name" id="name" placeholder="name">
+      </div>
+
+      <div class="field">
+        <label style="color: white;">Project Description</label>
+        <input type="text" name="desc" id="desc" placeholder="desc">
+      </div>
+
+      <div class="field">
+        <label style="color: white;">Tags</label>
+        <input type="text" name="desc" id="desc" placeholder="desc">
+      </div>
+
+      <button class="ui button" type="submit" style="margin: 20px 0;">Submit</button>
+    </form>
+  </div>
+
+  <!--{{#If_Logged_In}}-->
+  <!--<div class="ui text container">-->
+  <!--{{#if Template.subscriptionsReady}}-->
+  <!--<table style="margin-top: 20px" class="ui celled table">-->
+  <!--<thead>-->
+  <!--<tr>-->
+  <!--<th>Name</th>-->
+  <!--<th>Quantity</th>-->
+  <!--<th>Edit</th>-->
+  <!--</tr>-->
+  <!--</thead>-->
+
+  <!--<tbody>-->
+  <!--{{#each stuff in stuffList}}-->
+  <!--<tr>-->
+  <!--<td>{{stuff.name}}</td>-->
+  <!--<td>{{stuff.quantity}}</td>-->
+  <!--<td><a href="{{pathFor 'Edit_Stuff_Page' _id=stuff._id}}">Edit</a></td>-->
+  <!--</tr>-->
+  <!--{{/each}}-->
+  <!--</tbody>-->
+  <!--</table>-->
+  <!--{{else}}-->
+  <!--{{> Loading}}-->
+  <!--{{/if}}-->
+  <!--</div>-->
+  <!--{{/If_Logged_In}}-->
+
+</template>

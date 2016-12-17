@@ -1,0 +1,100 @@
+<template name="Collaborators_Page">
+
+  <div style="background-color: black; text-align: center; margin-top: -10px; padding: 10px 0;">
+    <h1>Collaborators</h1>
+    <p>People you've worked with through CollabApp</p>
+  </div>
+
+  <br>
+
+  <div class="ui container" style="background-color: whitesmoke; margin: 12px 0 25px 0;">
+    <div class="ui grid">
+      <div class="four wide column">
+        <img class="ui fluid image"
+             src="http://cdn.patch.com/assets/layout/contribute/user-default.png"
+             style="margin: 10px 0 0 10px;">
+      </div>
+      <div class="twelve wide column" style="color: black;">
+        <h2 style="margin-top: 10px;">Ted</h2>
+        <p>About me description.</p>
+      </div>
+    </div>
+  </div>
+
+  <br>
+
+  <div class="ui container" style="background-color: whitesmoke; margin-bottom: 25px;">
+    <div class="ui grid">
+      <div class="four wide column">
+        <img class="ui fluid image"
+             src="http://cdn.patch.com/assets/layout/contribute/user-default.png"
+             style="margin: 10px 0 0 10px;">
+      </div>
+      <div class="twelve wide column" style="color: black;">
+        <h2 style="margin-top: 10px;">Marshall</h2>
+        <p>About me description.</p>
+      </div>
+    </div>
+  </div>
+
+  <br>
+
+  <div class="ui container" style="background-color: whitesmoke; margin-bottom: 25px;">
+    <div class="ui grid">
+      <div class="four wide column">
+        <img class="ui fluid image"
+             src="http://cdn.patch.com/assets/layout/contribute/user-default.png"
+             style="margin: 10px 0 0 10px;">
+      </div>
+      <div class="twelve wide column" style="color: black;">
+        <h2 style="margin-top: 10px;">Barney</h2>
+        <p>About me description.</p>
+      </div>
+    </div>
+  </div>
+
+  <br>
+
+  <div class="ui container" style="background-color: whitesmoke; margin-bottom: 25px;">
+    <div class="ui grid">
+      <div class="four wide column">
+        <img class="ui fluid image"
+             src="http://cdn.patch.com/assets/layout/contribute/user-default.png"
+             style="margin: 10px 0 0 10px;">
+      </div>
+      <div class="twelve wide column" style="color: black;">
+        <h2 style="margin-top: 10px;">Lily</h2>
+        <p>About me description.</p>
+      </div>
+    </div>
+  </div>
+
+  <!--{{#If_Logged_In}}-->
+  <!--<div class="ui text container">-->
+  <!--{{#if Template.subscriptionsReady}}-->
+  <!--<table style="margin-top: 20px" class="ui celled table">-->
+  <!--<thead>-->
+  <!--<tr>-->
+  <!--<th>Name</th>-->
+  <!--<th>Quantity</th>-->
+  <!--<th>Edit</th>-->
+  <!--</tr>-->
+  <!--</thead>-->
+
+  <!--<tbody>-->
+  <!--{{#each stuff in stuffList}}-->
+  <!--<tr>-->
+  <!--<td>{{stuff.name}}</td>-->
+  <!--<td>{{stuff.quantity}}</td>-->
+  <!--<td><a href="{{pathFor 'Edit_Stuff_Page' _id=stuff._id}}">Edit</a></td>-->
+  <!--</tr>-->
+  <!--{{/each}}-->
+  <!--</tbody>-->
+  <!--</table>-->
+  <!--{{else}}-->
+  <!--{{> Loading}}-->
+  <!--{{/if}}-->
+  <!--</div>-->
+  <!--{{/If_Logged_In}}-->
+
+</template>

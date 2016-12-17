@@ -1,0 +1,73 @@
+<template name="Profile_Page">
+
+  <div style="background-color: black; text-align: center; margin-top: -10px; padding: 10px 0;">
+    <h1>Profile</h1>
+  </div>
+
+  <br>
+
+  <div style="text-align: center;">
+    <a class="{{ isActiveRoute 'Edit_Profile_Page'}} item"
+       href="{{ pathFor 'Edit_Profile_Page' }}"
+       style="color: black;">
+      <button class="ui button">Edit Profile</button>
+    </a>
+  </div>
+
+  <br>
+
+  <div class="ui container" style="margin: 0 0 25px 0;">
+    <div class="ui grid">
+      <div class="four wide column">
+        <img class="ui fluid image"
+             src="http://cdn.patch.com/assets/layout/contribute/user-default.png"
+             style="margin: 10px 0 0 10px;">
+      </div>
+      <div class="twelve wide column" style="color: white;">
+        <h1 style="margin-top: 10px;">Neil</h1>
+        <p>About me description.</p>
+      </div>
+    </div>
+  </div>
+
+  <div style="border: 2px solid black; border-radius: 3px; margin: 0 20px;">
+    <div class="ui text container" style="margin: 15px 0;">
+      <h2>Skills</h2>
+      <p>Description of skills.</p>
+    </div>
+
+    <div class="ui text container" style="margin: 15px 0;">
+      <h2>Experience</h2>
+      <p>Description of experience.</p>
+    </div>
+  </div>
+
+  <!--{{#If_Logged_In}}-->
+  <!--<div class="ui text container">-->
+  <!--{{#if Template.subscriptionsReady}}-->
+  <!--<table style="margin-top: 20px" class="ui celled table">-->
+  <!--<thead>-->
+  <!--<tr>-->
+  <!--<th>Name</th>-->
+  <!--<th>Quantity</th>-->
+  <!--<th>Edit</th>-->
+  <!--</tr>-->
+  <!--</thead>-->
+
+  <!--<tbody>-->
+  <!--{{#each stuff in stuffList}}-->
+  <!--<tr>-->
+  <!--<td>{{stuff.name}}</td>-->
+  <!--<td>{{stuff.quantity}}</td>-->
+  <!--<td><a href="{{pathFor 'Edit_Stuff_Page' _id=stuff._id}}">Edit</a></td>-->
+  <!--</tr>-->
+  <!--{{/each}}-->
+  <!--</tbody>-->
+  <!--</table>-->
+  <!--{{else}}-->
+  <!--{{> Loading}}-->
+  <!--{{/if}}-->
+  <!--</div>-->
+  <!--{{/If_Logged_In}}-->
+
+</template>
