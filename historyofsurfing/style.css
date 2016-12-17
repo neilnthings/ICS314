@@ -1,0 +1,15 @@
+h1 {
+  text-align: center;
+}
+
+body {
+  background-image: url("surfingmaldives2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  background-attachment: fixed;
+
+  color: black;
+  font-family: "Bitter", "Raleway";
+  font-size: large;
+}
