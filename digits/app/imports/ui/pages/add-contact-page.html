@@ -1,0 +1,61 @@
+<template name="Add_Contact_Page">
+  <div class="ui container" style="margin-top: 20px;">
+    <form class="ui form contact-data-form {{ errorClass }}">
+      <h4 class="ui dividing header">Add Contact</h4>
+      <div class="field">
+        <label>Name</label>
+        <div class="two fields">
+          <div class="field">
+            <input name="first" id="first" placeholder="First Name" type="text">
+            {{#if displayFieldError 'first' }}
+            <div class="ui error message">
+              <p>You must specify your first name.</p>
+            </div>
+            {{/if}}
+          </div>
+          <div class="field">
+            <input name="last" id="last" placeholder="Last Name" type="text">
+            {{#if displayFieldError 'last' }}
+            <div class="ui error message">
+              <p>You must specify your last name.</p>
+            </div>
+            {{/if}}
+          </div>
+        </div>
+      </div>
+
+      <div class="field">
+        <label>Address</label>
+        <input type="text" name="address" id="address" placeholder="Address">
+        {{#if displayFieldError 'address' }}
+        <div class="ui error message">
+          <p>You must specify your address.</p>
+        </div>
+        {{/if}}
+      </div>
+
+      <div class="field">
+        <label>Telephone/Email</label>
+        <div class="two fields">
+          <div class="field">
+            <input name="telephone" id="telephone" placeholder="XXX-XXX-XXXX" type="text">
+            {{#if displayFieldError 'telephone' }}
+            <div class="ui error message">
+              <p>You must specify your telephone.</p>
+            </div>
+            {{/if}}
+          </div>
+          <div class="field">
+            <input name="email" id="email" placeholder="foo@bar.com" type="text">
+            {{#if displayFieldError 'email' }}
+            <div class="ui error message">
+              <p>You must specify your email.</p>
+            </div>
+            {{/if}}
+          </div>
+        </div>
+      </div>
+      <button class="ui button" type="submit">Submit</button>
+    </form>
+  </div>
+</template>
