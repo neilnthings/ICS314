@@ -1,0 +1,49 @@
+.ui.borderless.topmenu.menu {
+  background-color: black;
+  box-shadow: black;
+  border: black;
+}
+
+.ui.borderless.middlemenu.menu {
+  box-shadow: none;
+  border: none;
+}
+
+.footer-background {
+  background-color: black;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.middle-section-1 {
+  background-image: url("http://www.volcom.com/media/wysiwyg/category/09292016_snowFloorset/MensS4_1400x430snow.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+}
+
+.middle-section-2 {
+  height: auto;
+  margin: 10px 10px;
+}
+
+.middle-section-2 b {
+  font-family: "itc_avant_garde_gothic_ltbold", Helvetica, Arial, sans-serif;
+  font-size: large;
+}
+
+.middle-section-2 span {
+  text-decoration: underline;
+}
+
+#middlecol {
+  margin-top: 130px;
+}
+
+p {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
